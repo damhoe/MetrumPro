@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_track">
+        <CheckBoxPreference
+            android:key="pref_beat_track_shortcuts"
+            android:title="@string/pref_beat_track_shortcuts"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="@string/pref_tempo_track_shortcuts"
+            android:title="@string/pref_tempo_track_shortcuts"
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_design">
+        <ListPreference
+            android:key="@string/pref_background_color"
+            android:title="@string/pref_background_color"
+            android:dialogTitle="@string/pref_background_color"
+            android:entries="@array/Designs"
+            android:entryValues="@array/Designs"/>
+        <ListPreference
+            android:title="@string/pref_visualization"
+            android:dialogTitle="@string/pref_visualization" />
+    </PreferenceCategory>
+</PreferenceScreen>

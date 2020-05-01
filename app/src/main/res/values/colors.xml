@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FFDDEE</color>
+    <color name="colorBackground">#17201e</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorHint">#CC8855</color>
+    <color name="colorList">#A9F5D0</color>
+    <color name="colorListAccent">#04B45F</color>
+    <color name="colorButtonDefault">#B4045F</color>
+    <color name="colorSetOne">#99CC33</color>
+    <color name="colorSetTwo">#999933</color>
+    <color name="colorSetThree">#996666</color>
+    <color name="colorSetBonus">#990033</color>
+
+</resources>

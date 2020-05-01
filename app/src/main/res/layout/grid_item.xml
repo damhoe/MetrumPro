@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_view_background">
+
+    <TextView
+        android:id="@+id/tempo_view_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_name_view_grid"
+        android:layout_centerHorizontal="true"
+        android:text="100"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/track_name_view_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="0sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="3sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginStart="20sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/spaceholder"
+         />
+
+
+    <TextView
+        android:id="@+id/dance_view_grid"
+        android:layout_below="@+id/tempo_view_grid"
+        android:layout_marginTop="0sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginStart="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="@string/spaceholder"/>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="50sp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="50sp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/colorListAccent"
+        android:background="@drawable/list_background_selector"/>
+
+</android.support.constraint.ConstraintLayout>

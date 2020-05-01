@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_standard_mode"
+        android:title="Standard Mode"
+        android:icon="@drawable/standard_unpressed"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_live_mode"
+        android:title="Live Mode"
+        android:icon="@drawable/live_unpressed"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_classic_mode"
+        android:title="Classic Mode"
+        android:icon="@drawable/classis_unpressed"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings_shortcut"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="103"
+        android:title="Settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="104"
+        android:title="Settings"
+        app:showAsAction="never"
+        android:icon="@android:drawable/ic_menu_add"/>
+    <item
+        android:id="@+id/action_select_accentSound"
+        android:orderInCategory="105"
+        android:title="TODO" />
+</menu>

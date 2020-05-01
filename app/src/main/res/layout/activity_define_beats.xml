@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefineFrequencyActivity"
+    style="@style/AppTheme"
+    >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/line"
+        android:dividerHeight="0sp"
+         />
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/selector">
+
+        <TextView
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text=""
+            />
+
+        <ImageView
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_margin="10sp"
+            android:baselineAlignBottom="true"
+            android:contentDescription="@string/label_empty"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hint">
+
+        <TextView
+            android:id="@+id/salsa"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="@string/link_salsa"
+            />
+
+        <TextView
+            android:id="@+id/chacha"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="@string/link_chacha"
+             />
+
+        <TextView
+            android:id="@+id/slowfox"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="@string/link_slowfox"
+            />
+
+        <TextView
+            android:id="@+id/waltz"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="@string/link_waltz"
+            />
+
+        <TextView
+            android:id="@+id/metrum"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:text="@string/link_metrum"
+            />
+
+     </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_above="@id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_hint_define_beats"
+        android:textColor="@color/colorHint"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/label_ok"
+        />
+
+
+</android.widget.RelativeLayout>

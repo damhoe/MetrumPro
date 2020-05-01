@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefineFrequencyActivity"
+    style="@style/AppTheme"
+    >
+
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15sp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButtonAndante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_andante"
+        />
+
+        <RadioButton
+            android:id="@+id/radioButtonAllegro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/allegro"
+             />
+
+        <RadioButton
+            android:id="@+id/radioButtonFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_free"
+             />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editFree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButtons"
+        android:text=""
+        android:inputType="number"
+        android:hint="@string/label_free"
+        android:layout_marginLeft="30sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginEnd="30sp"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/label_ok"
+        />
+
+</android.widget.RelativeLayout>

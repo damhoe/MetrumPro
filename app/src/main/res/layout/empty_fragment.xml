@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/TextViewSetOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/label_set_one"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/TextViewSetTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60sp"
+                android:text="@string/label_set_two"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/TextViewSetOne" />
+
+            <TextView
+                android:id="@+id/TextViewSetThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextViewSetOne"
+                android:layout_marginTop="40sp"
+                android:text="@string/label_set_three"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/TextViewSetFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextViewSetTwo"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="40sp"
+                android:text="@string/label_set_four"
+                android:textSize="30dp"
+                android:layout_toRightOf="@+id/TextViewSetThree"
+                tools:ignore="UnknownId" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"
+            android:text="@string/label_hint_swipe"
+            android:textColor="@color/colorHint" />
+
+    </RelativeLayout>
+
+</FrameLayout>

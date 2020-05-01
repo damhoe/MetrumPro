@@ -1,0 +1,107 @@
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1.0"
+    android:id="@+id/gig_mode_fragment_background">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="0.1"
+    android:weightSum="1.0">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"/>
+
+    <ImageButton
+        android:id="@+id/btn_previous_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.15"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_rew" />
+
+    <TextView
+        android:id="@+id/set_number_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:text="@string/first_set"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <ImageButton
+        android:id="@+id/btn_next_set"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.15"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_ff" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"/>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.2">
+
+    <Button
+        android:id="@+id/gig_mode_pro_version_start_stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <com.stho.metrum.TrainImageView
+        android:id="@+id/trainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/track_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/spaceholder"
+        android:textColor="@color/colorListAccent"
+        android:textStyle="normal"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
+
+<FrameLayout
+    android:id="@+id/tracks_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.7">
+
+    <GridView
+        android:id="@+id/track_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnWidth="100dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10sp"
+        android:verticalSpacing="10sp"
+        android:stretchMode="columnWidth"
+        android:background="?android:attr/activatedBackgroundIndicator">
+    </GridView>
+
+</FrameLayout>
+
+</android.widget.LinearLayout>
